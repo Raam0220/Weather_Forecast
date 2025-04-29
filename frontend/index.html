@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+
+  <!-- Link Leaflet CSS (Map Library) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Weather Forecast</h1>
+
+  <div class="search-container">
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <!-- ✅ Add Map Div -->
+  <div id="map" style="height: 400px; margin: 20px 0;"></div>
+
+  <div class="weather-info">
+    <h2 id="cityName">City Name</h2>
+    <h3 id="temp">Temperature: -- °C</h3>
+    <h3 id="description">Weather: --</h3>
+
+    <h3>Additional Info</h3>
+    <ul id="additionalInfo">
+      <li>Wind Speed: -- m/s</li>
+      <li>Pressure: -- hPa</li>
+      <li>Humidity: -- %</li>
+      <li>Sunset Time: --</li>
+    </ul>
+  </div>
+
+  <!-- ✅ Leaflet JS (Map Script) -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

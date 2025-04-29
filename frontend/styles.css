@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+#cityInput, #searchBtn {
+  padding: 10px;
+  margin: 5px;
+  width: 300px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+#weatherInfo {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#todayForecast, #forecast10days, #additionalInfo {
+  margin-top: 20px;
+}
+
+body {
+  transition: background 1s ease-in-out;
+}
+
+/* Weather Backgrounds */
+body.weather-clear {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.weather-clouds {
+  background: url('https://images.unsplash.com/photo-1499346030926-9a72daac6c63') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.weather-rain {
+  background: url('https://images.unsplash.com/photo-1504309096780-21d7dbb862e1') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.weather-thunderstorm {
+  background: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.weather-snow {
+  background: url('https://images.unsplash.com/photo-1542144612-1ba00456b5d1') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.weather-mist {
+  background: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9') no-repeat center center fixed;
+  background-size: cover;
+}
